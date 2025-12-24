@@ -8,57 +8,122 @@
 </head>
 <body>
   <header>
-    <h1>Репетитор математики</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">Про мене</a></li>
-        <li><a href="#services">Послуги</a></li>
-        <li><a href="#reviews">Відгуки</a></li>
-        <li><a href="#contact">Контакти</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="container">
+          <h1>Репетитор математики</h1>
+          <nav>
+            <ul>
+              <li><a href="#about">Про мене</a></li>
+              <li><a href="#services">Послуги</a></li>
+              <li><a href="#reviews">Відгуки</a></li>
+              <li><a href="#contact">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-  <main>
-    <section id="hero">
-      <h2>Вітаю! Я – [ІМʼЯ РЕПЕТИТОРА]</h2>
-      <p>Допоможу зрозуміти математику та покращити результати.</p>
-      <a href="#contact" class="btn">Записатися</a>
-    </section>
+      <main>
+        <section id="hero">
+          <div class="container">
+            <h2>Вітаю! Я – [ІМ'Я РЕПЕТИТОРА]</h2>
+            <p>Допоможу зрозуміти математику та покращити результати.</p>
+            <a href="#contact" class="btn">Записатися</a>
+          </div>
+        </section>
 
-    <section id="about">
-      <h2>Про мене</h2>
-      <p>[Тут буде інформація про репетитора]</p>
-    </section>
+        <section id="about">
+          <div class="container">
+            <h2>Про мене</h2>
+            <p>
+              Я досвідчений репетитор з математики з більш ніж 5-річним стажем.
+              Маю вищу освіту в галузі математики та педагогіки.
+              Спеціалізуюся на підготовці до НМТ та роботі зі школярами 5-11 класів.
+              Моя мета - не просто допомогти вивчити формули, а навчити думати логічно
+              та розуміти математику на глибокому рівні.
+            </p>
+          </div>
+        </section>
 
-    <section id="services">
-      <h2>Послуги</h2>
-      <ul class="services-list">
-        <li>Підготовка до НМТ / ЗНО</li>
-        <li>Шкільна програма 5–11 клас</li>
-        <li>Онлайн консультації</li>
-      </ul>
-    </section>
+        <section id="services">
+          <div class="container">
+            <h2>Послуги</h2>
+            <ul class="services-list">
+              <li>
+                <span class="bullet">■</span>
+                <div>
+                  <h3>Підготовка до НМТ / ЗНО</h3>
+                  <p>Комплексна підготовка до тестування з математики</p>
+                </div>
+              </li>
+              <li>
+                <span class="bullet">■</span>
+                <div>
+                  <h3>Шкільна програма 5–11 клас</h3>
+                  <p>Допомога з шкільною програмою та домашніми завданнями</p>
+                </div>
+              </li>
+              <li>
+                <span class="bullet">■</span>
+                <div>
+                  <h3>Онлайн консультації</h3>
+                  <p>Зручні онлайн-заняття в комфортній обстановці</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-    <section id="reviews">
-      <h2>Відгуки</h2>
-      <p>[Відгуки учнів]</p>
-    </section>
+        <section id="reviews">
+          <div class="container">
+            <h2>Відгуки</h2>
+            <div class="reviews-grid">
+              <div class="review-card">
+                <p>
+                  "Дуже дякую за допомогу! Завдяки заняттям мій бал на НМТ підвищився на 30 балів.
+                  Рекомендую всім!"
+                </p>
+                <p class="review-author">— Олена, 11 клас</p>
+              </div>
+              <div class="review-card">
+                <p>
+                  "Чудовий педагог! Пояснює складні теми простою мовою.
+                  Математика стала моїм улюбленим предметом."
+                </p>
+                <p class="review-author">— Андрій, 9 клас</p>
+              </div>
+              <div class="review-card">
+                <p>
+                  "Професійний підхід і гарантований результат. Дитина тепер розуміє математику
+                  та отримує високі оцінки."
+                </p>
+                <p class="review-author">— Марія (батьки учня)</p>
+              </div>
+              <div class="review-card">
+                <p>
+                  "Онлайн-формат виявився дуже зручним. Заняття проходять цікаво,
+                  завжди індивідуальний підхід."
+                </p>
+                <p class="review-author">— Софія, 10 клас</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <section id="contact">
-      <h2>Контакти</h2>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="Імʼя" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Повідомлення" required></textarea>
-        <button type="submit">Надіслати</button>
-      </form>
-    </section>
-  </main>
+        <section id="contact">
+          <div class="container">
+            <h2>Контакти</h2>
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Ім'я" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea name="message" placeholder="Повідомлення" required></textarea>
+              <button type="submit">Надіслати</button>
+            </form>
+          </div>
+        </section>
+      </main>
 
-  <footer>
-    <p>© 2025 Репетитор математики</p>
-  </footer>
+      <footer>
+        <p>© 2025 Репетитор математики</p>
+      </footer>
 
   <script src="script.js"></script>
 </body>
