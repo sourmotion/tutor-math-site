@@ -1,3 +1,28 @@
+:root {
+  --color-primary: #4b5cab;
+  --color-accent: #ff9900;
+  --color-accent-hover: #e68a00;
+
+  --color-bg-hero: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+  --color-bg-light: #f9fafb;
+  --color-bg-white: white;
+  --color-bg-footer: #eee;
+
+  --color-text-muted: #4b5563;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-input-border: #d1d5db;
+
+  --font-main: Arial, sans-serif;
+
+  --container-wide: 1280px;
+  --container-normal: 1024px;
+  --container-narrow: 672px;
+
+  --section-padding-desktop: 3em 2em;
+  --section-padding-mobile: 2em 1em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +30,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   margin: 0;
   line-height: 1.6;
   min-height: 100vh;
@@ -14,13 +39,13 @@ body {
 }
 
 header {
-  background: #4b5cab;
+  background: var(--color-primary);
   color: white;
   padding: 1em;
 }
 
 header .container {
-  max-width: 1280px;
+  max-width: var(--container-wide);
   margin: 0 auto;
 }
 
@@ -51,11 +76,11 @@ main {
 }
 
 section {
-  padding: 3em 2em;
+  padding: var(--section-padding-desktop);
 }
 
 section .container {
-  max-width: 1024px;
+  max-width: var(--container-normal);
   margin: 0 auto;
 }
 
@@ -65,7 +90,7 @@ section h2 {
 
 #hero {
   text-align: center;
-  background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+  background: var(--color-bg-hero);
 }
 
 #hero h2 {
@@ -78,7 +103,7 @@ section h2 {
 
 .btn {
   display: inline-block;
-  background: #ff9900;
+  background: var(--color-accent);
   color: white;
   padding: 0.75em 1.5em;
   text-decoration: none;
@@ -87,19 +112,19 @@ section h2 {
 }
 
 .btn:hover {
-  background: #e68a00;
+  background: var(--color-accent-hover);
 }
 
 #about {
-  background: white;
+  background: var(--color-bg-white);
 }
 
 #about p {
-  color: #4b5563;
+  color: var(--color-text-muted);
 }
 
 #services {
-  background: #f9fafb;
+  background: var(--color-bg-light);
 }
 
 .services-list {
@@ -115,7 +140,7 @@ section h2 {
 }
 
 .services-list .bullet {
-  color: #4b5cab;
+  color: var(--color-primary);
   margin-top: 0.25em;
   flex-shrink: 0;
 }
@@ -126,11 +151,11 @@ section h2 {
 }
 
 .services-list p {
-  color: #6b7280;
+  color: var(--color-text-secondary);
 }
 
 #reviews {
-  background: white;
+  background: var(--color-bg-white);
 }
 
 .reviews-grid {
@@ -140,28 +165,28 @@ section h2 {
 }
 
 .review-card {
-  background: #f9fafb;
+  background: var(--color-bg-light);
   padding: 1.5em;
   border-radius: 8px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border);
 }
 
 .review-card > p:first-child {
   margin-bottom: 0.75em;
-  color: #4b5563;
+  color: var(--color-text-muted);
 }
 
 .review-author {
   font-weight: 600;
-  color: #4b5cab;
+  color: var(--color-primary);
 }
 
 #contact {
-  background: #f9fafb;
+  background: var(--color-bg-light);
 }
 
 #contact .container {
-  max-width: 672px;
+  max-width: var(--container-narrow);
 }
 
 #contactForm {
@@ -174,16 +199,16 @@ section h2 {
 #contactForm textarea {
   width: 100%;
   padding: 0.75em 1em;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-input-border);
   border-radius: 4px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 1em;
 }
 
 #contactForm input:focus,
 #contactForm textarea:focus {
   outline: none;
-  border-color: #4b5cab;
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(75, 92, 171, 0.1);
 }
 
@@ -194,7 +219,7 @@ section h2 {
 
 #contactForm button {
   width: 100%;
-  background: #ff9900;
+  background: var(--color-accent);
   color: white;
   padding: 0.75em 1.5em;
   border: none;
@@ -205,18 +230,18 @@ section h2 {
 }
 
 #contactForm button:hover {
-  background: #e68a00;
+  background: var(--color-accent-hover);
 }
 
 footer {
   text-align: center;
   padding: 1em;
-  background: #eee;
+  background: var(--color-bg-footer);
 }
 
 @media (max-width: 768px) {
   section {
-    padding: 2em 1em;
+    padding: var(--section-padding-mobile);
   }
 
   .reviews-grid {
